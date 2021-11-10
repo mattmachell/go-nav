@@ -1,0 +1,11 @@
+<nav aria-label={{.Title}}>
+
+    <ul>
+        {{range .Items}}
+        <li>
+            <a href="{{ .Link}}" {{if .Selected }}aria-current="true"{{end}}>{{.Title}}</a>
+        <li>
+        {{end}}
+    </ul>
+        
+</nav>
